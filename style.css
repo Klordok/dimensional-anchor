@@ -65,3 +65,24 @@ section.bg-callout {
     }
 
 }
+
+/* Contact Form Design */
+
+form {
+    padding-right: 8px;
+    /* Fixed small sizing issue on the right */
+}
+
+form label {
+    display: block;
+}
+
+form input, 
+form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form textarea {
+    height: 160px;
+}
