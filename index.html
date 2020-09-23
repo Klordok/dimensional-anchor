@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 
 <!--
-Requirements
 Code Requirements
 
     Create a page layout using flexbox.
     Implement appropriate media queries for responsive design.
     Utilize semantic, valid markup
     Build your page from scratch (no template usage)
+    Use Responsive Navigation
+    Code a functional Contact form
 
 Detail and quality requirements
 
@@ -26,20 +27,14 @@ Page Content Requirements
         List of services you can (or want to) provide a client.
     Contact Section:
         email address
-        link to your github profile
-        link to your linkedin profile
+        link to github
+        link to linkedin
+        functional contact form
     Project section
         Project Title
         Project Description
         link to Project
 
-    Sample project listing
-    Title of the project
-    Description that explains what the app does, who it's for, why you built it.
-        Skills used (what is the stack)
-        (Optional) Screenshot that presents the app appropriately - may be a placeholder - the actual image does not really matter.
-        Link to the GitHub repo of the project
-        Link to live, working app
 
 -->
 <html lang="en">
@@ -53,12 +48,20 @@ Page Content Requirements
     <body>
         <header>
             <h1>Kelsey Krehbiel</h1>
+            <nav class="group">
+                <ul id="menu">
+                    <li class="item"><a href="#intro">Home</a></li>
+                    <li class="item"><a href="#about">About</a></li>
+                    <li class="item"><a href="#contact">Contact</a></li>
+                    <li class="item"><a href="#portfolio">Portfolio</a></li>                    
+                </ul>
+            </nav>
         </header>
         <main>
             <!-- Group #1 Intro -->
             <section class="group">
                 <div class="item">
-                    <h2>Intro</h2>
+                    <h2 id="intro">Intro</h2>
                     <p>I'm a web developer</p>
                     <p>I live in Mesa, Arizona</p>
                     <p>I'm a cool person</p>
@@ -67,7 +70,7 @@ Page Content Requirements
             <!--About Me section:-->
             <section class="group">
                 <div class="item">
-                    <h2>About Me</h2>
+                    <h2 id="about">About Me</h2>
                     <p>I think the web is neat</p>
                     <p>I would like to work on a team with great programmers</p>
                     <p>I like folk punk, table top games, and liminal spaces</p>
@@ -86,7 +89,7 @@ Page Content Requirements
             <section class="group">
 
                 <div class="item">
-                    <h2>Contact</h2>
+                    <h2 id="contact">Contact</h2>
                     <form action="https://formspree.io/krehbielk@gmail.com"
                     method="post">
                     <label for="user-name">Name:</label>
@@ -109,7 +112,7 @@ Page Content Requirements
                 </div>
             </section>
             <!--Project section-->
-            <section class="group bg-callout">
+            <section class="group bg-callout" id="portfolio">
                 <div class="item">
                     <h2>CRUD</h2>
                     <p>Create Read Update Delete</p>
