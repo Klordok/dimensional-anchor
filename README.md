@@ -1,2 +1,2 @@
-# Portfolio
-WebDev Portfolio with Flexbox and media queries
+#home portal
+personal home page
